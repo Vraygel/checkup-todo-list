@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<title>Grade 1. Этап 2. Задание 1</title>
 </head>
+
 <body>
 	<header class="header">
-		<h1 class="header__title">Шапка сайта</h1>
+		<h1 class="header__title">Мои задачи</h1>
 	</header>
 
 	<main class="main">
 
-		<!-- Форма Регистрация -->
-		<form class="registration" name="registration" action="#">
-			<label class="registration__title" for="registration">Регистрация</label>
-			<input class="registration__input registration__input--name" type="text" placeholder="Имя">
-			<input class="registration__input registration__input--password" type="password" placeholder="Пароль">
-			<button class="registration__button" type="submit">Регистрация</button>
-		</form>
+		<section class="authentication">
+			<!-- Форма Регистрация -->
+			<form class="authentication__form" name="registration" action="#">
+				<label class="authentication__title" for="registration">Регистрация</label>
+				<input class="authentication__input registration__input--name" type="text" placeholder="Имя">
+				<input class="authentication__input registration__input--password" type="password" placeholder="Пароль">
+				<button class="authentication__button" type="submit">Регистрация</button>
+			</form>
 
-		<!-- Форма авторизации  -->
-		<form class="authorization" name="authorization" action="#">
-			<label class="authorization__title" for="authorization">Регистрация</label>
-			<input class="authorization__input authorization__input--name" type="text" placeholder="Имя">
-			<input class="authorization__input authorization__input--password" type="password" placeholder="Пароль">
-			<button class="authorization__button" type="submit">Авторизация</button>
-		</form>
+			<!-- Форма авторизации  -->
+			<form class="authentication__form" name="authorization" action="#">
+				<label class="authentication__title" for="authorization">Авторизация</label>
+				<input class="authentication__input authorization__input--name" type="text" placeholder="Имя">
+				<input class="authentication__input authorization__input--password" type="password" placeholder="Пароль">
+				<button class="authentication__button" type="submit">Авторизация</button>
+			</form>
+		</section>
 
+
+
+		<!-- Список задач  -->
 		<section class="task">
-			<h1 class="task__title" >Ваши задачи</h1>
+			<h2 class="task__title">Ваши задачи</h2>
 
 			<form class="task__form" action="#">
 				<textarea class="task__textarea" placeholder="Новая задача"></textarea>
-				<button class="task__but">Новая задача</button>
+				<button class="task__button">Новая задача</button>
 			</form>
 
 			<ul class="task__list">
@@ -44,6 +51,7 @@
 		</section>
 
 	</main>
-	
+
 </body>
+
 </html>
