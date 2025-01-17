@@ -16,18 +16,32 @@
 		<!-- Форма Регистрация -->
 		<form class="registration" name="registration" action="#">
 			<label class="registration__title" for="registration">Регистрация</label>
-			<input class="registration__input registration__input-name" type="text" placeholder="Имя">
-			<input class="registration__input registration__input-password" type="password" placeholder="Пароль">
-			<button class="registration__but" type="submit">Регистрация</button>
+			<input class="registration__input registration__input--name" type="text" placeholder="Имя">
+			<input class="registration__input registration__input--password" type="password" placeholder="Пароль">
+			<button class="registration__button" type="submit">Регистрация</button>
 		</form>
 
 		<!-- Форма авторизации  -->
 		<form class="authorization" name="authorization" action="#">
 			<label class="authorization__title" for="authorization">Регистрация</label>
-			<input class="authorization__input authorization__input-name" type="text" placeholder="Имя">
-			<input class="authorization__input authorization__input-password" type="password" placeholder="Пароль">
-			<button class="authorization__but" type="submit">Авторизация</button>
+			<input class="authorization__input authorization__input--name" type="text" placeholder="Имя">
+			<input class="authorization__input authorization__input--password" type="password" placeholder="Пароль">
+			<button class="authorization__button" type="submit">Авторизация</button>
 		</form>
+
+		<section class="task">
+			<h1 class="task__title" >Ваши задачи</h1>
+
+			<form class="task__form" action="#">
+				<textarea class="task__textarea" placeholder="Новая задача"></textarea>
+				<button class="task__but">Новая задача</button>
+			</form>
+
+			<ul class="task__list">
+				<li class="task__item"></li>
+			</ul>
+
+		</section>
 
 	</main>
 	
